@@ -1,0 +1,81 @@
+@mixin background($background-image, $background-size, $background-repeat) {
+  background-image: $background-image;
+  background-size: $background-size;
+  background-repeat: $background-repeat;
+}
+%generic_txt {
+  font-family: fonts.$primary-font;
+  font-style: normal;
+  color: fonts.$primary-color;
+}
+.trip-part-1 {
+  @include background(url(../pictures/Image_5.png), cover, no-repeat);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.trip-part-2 {
+  @include background(url(../pictures/Image_6.png), cover, no-repeat);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: flex-end;
+}
+.trip-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 543px;
+  row-gap: 50px;
+  background: #232323;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  padding: 30px;
+}
+.trip-title {
+  @extend%generic_txt;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.trip-place {
+  @extend%generic_txt;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.trip-text {
+  @extend%generic_txt;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #e8e8e8;
+}
+.trip-flex-titlegap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.trip-flex-textgap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.trip-btn {
+  max-width: 228px;
+  width: 100%;
+  align-self: flex-start;
+  border: none;
+  background: #5474fd;
+  padding: 15px;
+  font-family: fonts.$secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: fonts.$primary-color;
+}
