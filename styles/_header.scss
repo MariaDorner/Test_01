@@ -1,0 +1,107 @@
+%generic_txt {
+  font-family: fonts.$primary-font;
+  font-style: normal;
+  color: fonts.$primary-color;
+}
+.header {
+  background-image: url(../pictures/image_1.png);
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  &-title {
+    @extend%generic_txt;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+  }
+  &-subtitle {
+    @extend%generic_txt;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+  }
+}
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 200px;
+}
+.header-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-form {
+  display: flex;
+  border: none;
+}
+.header-input {
+  border: none;
+  flex-grow: 2;
+  width: 653px;
+}
+.header-input::placeholder {
+  font-family: fonts.$primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+.header-btn-container {
+  background: #5474fd;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+}
+.header-btn {
+  border: none;
+  padding: 18px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: fonts.$primary-color;
+  background: #5474fd;
+}
+.search_icon {
+  width: 22px;
+  padding: 18px;
+  height: 24px;
+}
+.scroll-btn {
+  @extend%generic_txt;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  border: none;
+  background: none;
+}
+.scroll_icon {
+  width: 17px;
+  height: 11px;
+}

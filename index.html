@@ -4,37 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Test</title>
   </head>
   <body>
-    <header>
-      <div>
-        <h1>Bhromaon</h1>
-        <h3>Safe Travel Anywhere</h3>
-        <form action="">
-          <input type="search" placeholder="Search Your Travel Destination" />
-          <button>Search</button>
-        </form>
-        <button>Scroll down</button>
+    <header class="header">
+      <div class="header-titles">
+        <h1 class="header-title">Bhromaon</h1>
+        <h3 class="header-subtitle">Safe Travel Anywhere</h3>
       </div>
-      <nav>
-        <h3>Bhromaon</h3>
-        <ul>
-          <li>
-            <a href="">Who are we</a>
-          </li>
-          <li>
-            <a href="">What we do</a>
-          </li>
-          <li>
-            <a href="">Travel with us</a>
-          </li>
-          <li>
-            <a href="">Contact us</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-btns">
+        <form action="">
+          <div class="header-form">
+            <input
+              type="search"
+              placeholder="Search Your Travel Destination"
+              class="header-input"
+              required
+            />
+            <div class="header-btn-container">
+              <button class="header-btn">Search</button>
+
+              <svg class="search_icon">
+                <use href="./pictures/search-svg.svg#search-icon"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+        <div class="header-scroll">
+          <button class="scroll-btn">Scroll down</button>
+          <svg class="scroll_icon">
+            <use href="./pictures/scroll_down.svg#scroll-icon"></use>
+          </svg>
+        </div>
+      </div>
     </header>
+    <nav class="main-nav">
+      <h3>Bhromaon</h3>
+      <ul>
+        <li>
+          <a href="">Who are we</a>
+        </li>
+        <li>
+          <a href="">What we do</a>
+        </li>
+        <li>
+          <a href="">Travel with us</a>
+        </li>
+        <li>
+          <a href="">Contact us</a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
