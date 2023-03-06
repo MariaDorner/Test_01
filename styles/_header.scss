@@ -92,14 +92,13 @@
   padding: 18px;
   height: 24px;
 }
-.scroll-btn {
+.scroll-down {
   @extend%generic_txt;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 2.8px;
-  border: none;
-  background: none;
+  text-decoration: none;
 }
 .scroll_icon {
   width: 17px;
