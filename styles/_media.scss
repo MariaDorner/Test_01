@@ -21,7 +21,7 @@
     font-size: 18px;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 550px) {
   section.why-section {
     flex-wrap: wrap;
   }
@@ -37,6 +37,22 @@
     line-height: 20px;
     padding: 10px;
   }
+  img.why-img-1,
+  img.why-img-2 {
+    width: 100px;
+  }
+  h3.hit-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .thumbs-up-icon,
+  .glass-icon,
+  .check-icon {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
   input.header-input {
     width: 150px;
     max-height: 44px;
@@ -108,5 +124,12 @@
 @media screen and (min-width: 730px) {
   button.menu-icon {
     display: none;
+  }
+}
+@media screen and (min-width: 470px) {
+  .thumbs-up-icon,
+  .glass-icon,
+  .check-icon {
+    width: 60px;
   }
 }
