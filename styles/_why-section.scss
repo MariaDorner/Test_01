@@ -45,6 +45,13 @@
   color: fonts.$primary-color;
   padding: 20px;
   align-self: start;
+  transition: 0.5s;
+}
+.why-btn:hover,
+.trip-btn:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  color: #496bfe;
 }
 .why-imgs-container {
   display: grid;
