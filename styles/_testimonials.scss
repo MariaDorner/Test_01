@@ -1,0 +1,54 @@
+@mixin background($background-image, $background-size, $background-repeat) {
+  background-image: $background-image;
+  background-size: $background-size;
+  background-repeat: $background-repeat;
+}
+%generic_txt {
+  font-family: fonts.$primary-font;
+  font-style: normal;
+  color: fonts.$primary-color;
+}
+.testimonial {
+  @include background(url(../pictures/Image_8.png), cover, no-repeat);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    text-align: center;
+    color: fonts.$primary-color;
+    font-family: fonts.$secondary-font;
+  }
+  &-container {
+    display: flex;
+  }
+}
+.testimonial-text-container {
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.testimonial-name {
+  font-family: fonts.$primary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+.testimonial-quote {
+  font-family: fonts.$secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #e8e8e8;
+  max-width: 581px;
+}
